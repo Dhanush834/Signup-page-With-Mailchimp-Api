@@ -9,6 +9,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static("public"))
 
 
+app.get("/healthz", (req,res) => {
+    res.send("OK");
+})
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
