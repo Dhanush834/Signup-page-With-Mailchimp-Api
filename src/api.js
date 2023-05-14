@@ -48,7 +48,7 @@ app.post("/", (req, res) => {
 
     const options = {
         method: "POST",
-        auth: "Dhanu:914b2e4486658dd8438931c516b04b9f-us21"
+        auth: "Dhanu:ENV_APIKEY"
     }
 
     const request = https.request(url, options, (response) => {
